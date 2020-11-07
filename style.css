@@ -1,0 +1,79 @@
+header {
+  font-family: Inconsolata;
+  color: #13000a;
+  background-color: #da7386;
+  grid-column: 1/3;
+  grid-row: 1;
+  text-align: center;
+}
+header p {
+  color: #13000a;
+}
+
+body {
+  background-color: #210012;
+  color: #210012;
+  margin: auto;
+  width: 45%;
+}
+
+#container {
+  background-color: #13000a;
+  border-color: #da7386;
+  border-style: solid;
+  border-width: thin;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+p {
+  color: #ffcbd4;
+  font-family: Inconsolata;
+}
+
+h3 {
+  color: rosybrown;
+  font-family: Inconsolata;
+}
+
+section {
+  grid-column: 2/3;
+  grid-row: 2;
+  margin-left: 2%;
+}
+section h4 {
+  color: #ffcbd4;
+  font-family: Inconsolata;
+}
+section p {
+  font-size: 14px;
+}
+
+aside {
+  background-color: #0e0007;
+  grid-column: 1;
+  grid-row: 2;
+  border-right: thin solid #da7386;
+}
+aside p {
+  font-size: 12px;
+  margin-left: 5%;
+}
+aside h3 {
+  color: rosybrown;
+  font-family: Inconsolata;
+  text-align: center;
+}
+
+footer {
+  margin: auto;
+  grid-row: 3;
+}
+
+#todo {
+  margin-left: 3%;
+  color: #ffcbd4;
+}
+
+/*# sourceMappingURL=style.css.map */
