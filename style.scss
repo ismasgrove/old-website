@@ -4,6 +4,7 @@ $primary-accent: #da7386;
 $usable-color: #13000a;
 $sidebar-color: #0e0007;
 $article-text-color: #ffcbd4;
+$text-highlight: #ff2b52;
 
 header {
   font-family: $font;
@@ -38,18 +39,12 @@ p {
   font-family: $font;
 }
 
-h3 {
-  color: rosybrown;
-  font-family: $font;
-}
-
 section {
-  //background-color: red;
   grid-column: 2 / 3;
   grid-row: 2;
   margin-left: 2%;
   h4 {
-    color: $article-text-color;
+    color: $primary-accent;
     font-family: $font;
   }
   p {
@@ -67,20 +62,26 @@ aside {
     margin-left: 5%;
   }
   h3 {
-    color: rosybrown;
+    color: $primary-accent;
     font-family: $font;
     text-align: center;
   }
 }
 
 footer {
-  margin: auto;
-  grid-row: 3;
+  font-family: $font;
+  color: $primary-accent;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #todo {
+  @extend p;
   margin-left: 3%;
-  color: $article-text-color;
+  color: $text-highlight;
+  ol {
+    @extend p;
+  }
 }
 
 canvas {

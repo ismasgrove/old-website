@@ -6,7 +6,7 @@ header {
   grid-row: 1;
   text-align: center;
 }
-header p {
+header p, header #todo ol, #todo header ol, header #todo {
   color: #13000a;
 }
 
@@ -27,13 +27,8 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-p {
+p, #todo ol, #todo {
   color: #ffcbd4;
-  font-family: Inconsolata;
-}
-
-h3 {
-  color: rosybrown;
   font-family: Inconsolata;
 }
 
@@ -43,10 +38,10 @@ section {
   margin-left: 2%;
 }
 section h4 {
-  color: #ffcbd4;
+  color: #da7386;
   font-family: Inconsolata;
 }
-section p {
+section p, section #todo ol, #todo section ol, section #todo {
   font-size: 14px;
 }
 
@@ -56,26 +51,27 @@ aside {
   grid-row: 2;
   border-right: thin solid #da7386;
 }
-aside p {
+aside p, aside #todo ol, #todo aside ol, aside #todo {
   font-size: 12px;
   margin-left: 5%;
 }
 aside h3 {
-  color: rosybrown;
+  color: #da7386;
   font-family: Inconsolata;
   text-align: center;
 }
 
 footer {
-  margin: auto;
-  grid-row: 3;
+  font-family: Inconsolata;
+  color: #da7386;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #todo {
   margin-left: 3%;
-  color: #ffcbd4;
+  color: #ff2b52;
 }
-
 canvas {
   margin: auto;
   display: block;
