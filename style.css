@@ -76,4 +76,9 @@ footer {
   color: #ffcbd4;
 }
 
+canvas {
+  margin: auto;
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
