@@ -20,11 +20,12 @@ body {
 #container {
   background-color: #13000a;
   border-color: #da7386;
+  margin-top: 3%;
   border-style: solid;
   border-width: thin;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: minmax(24%, 4fr);
+  grid-template-rows: minmax(1, 4fr);
 }
 
 p, #todo ol, #todo {

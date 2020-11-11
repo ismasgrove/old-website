@@ -28,11 +28,12 @@ body {
 #container {
   background-color: $usable-color;
   border-color: $primary-accent;
+  margin-top: 3%;
   border-style: solid;
   border-width: thin;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: minmax(24%, 4fr);
+  grid-template-rows: minmax(1, 4fr);
 }
 p {
   color: $article-text-color;
