@@ -1,41 +1,41 @@
 $font: Inconsolata;
 $background-color: #210012;
 $primary-accent: #da7386;
-$usable-color: #13000a;
+$container-color: #13000a;
 $sidebar-color: #0e0007;
 $article-text-color: #ffcbd4;
 $text-highlight: #ff2b52;
 
 header {
   font-family: $font;
-  color: $usable-color;
+  color: $container-color;
   background-color: $primary-accent;
   grid-column: 1 / 3;
   grid-row: 1;
   text-align: center;
   p {
-    color: $usable-color;
+    color: $container-color;
   }
 }
 
 body {
   background-color: $background-color;
   color: $background-color;
-  margin: auto;
-  width: 45%;
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #container {
-  background-color: $usable-color;
+  background-color: $container-color;
   border-color: $primary-accent;
-  margin-top: 3%;
   border-style: solid;
   border-width: thin;
   display: grid;
+  margin: 2em auto 2px;
   grid-template-columns: minmax(24%, 4fr);
   grid-template-rows: minmax(1, 4fr);
-  min-width: 800px;
-  max-width: 800px;
+  width: 50rem;
 }
 p {
   color: $article-text-color;
@@ -45,7 +45,8 @@ p {
 section {
   grid-column: 2 / 3;
   grid-row: 2;
-  margin-left: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
   h4 {
     color: $primary-accent;
     font-family: $font;
@@ -59,10 +60,12 @@ aside {
   background-color: $sidebar-color;
   grid-column: 1;
   grid-row: 2;
+  margin: 0 auto;
   border-right: thin solid $primary-accent;
   p {
     font-size: 12px;
-    margin-left: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   h3 {
     color: $primary-accent;
@@ -74,7 +77,6 @@ aside {
 footer {
   font-family: $font;
   color: $primary-accent;
-  width: 50%;
   margin: 0 auto;
 }
 
