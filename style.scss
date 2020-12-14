@@ -35,8 +35,9 @@ body {
   margin: 2em auto 2px;
   grid-template-columns: minmax(24%, 4fr);
   grid-template-rows: minmax(1, 4fr);
-  width: 50rem;
+  width: 53rem;
 }
+
 p {
   color: $article-text-color;
   font-family: $font;
@@ -45,12 +46,17 @@ p {
 section {
   grid-column: 2 / 3;
   grid-row: 2;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-right: 3%;
-  h4 {
-    color: $primary-accent;
-    font-family: $font;
+  width: minmax(30rem, 40rem);
+  height: 32rem;
+  overflow: auto;
+  scrollbar-width: none;
+  padding-right: 3%;
+  ::-webkit-scrollbar {
+    display: none;
   }
+
   p {
     font-size: 14px;
   }
@@ -61,6 +67,8 @@ aside {
   grid-column: 1;
   grid-row: 2;
   margin: 0 auto;
+  min-width: 11rem;
+  width: auto;
   border-right: thin solid $primary-accent;
   p {
     font-size: 12px;
@@ -72,12 +80,25 @@ aside {
     font-family: $font;
     text-align: center;
   }
+  canvas {
+    margin: auto;
+    display: block;
+  }
 }
 
 footer {
   font-family: $font;
   color: $primary-accent;
   margin: 0 auto;
+}
+
+#post-container {
+  h4 {
+    margin-left: 2%;
+    color: $primary-accent;
+    font-family: $font;
+    max-height: 1%;
+  }
 }
 
 #todo {
@@ -87,9 +108,4 @@ footer {
   ol {
     @extend p;
   }
-}
-
-canvas {
-  margin: auto;
-  display: block;
 }

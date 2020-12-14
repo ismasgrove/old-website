@@ -27,66 +27,74 @@
         <h3>isma's grove</h3>
         <p>this will be a cool website, eventually.</p>
       </aside>
-      <section>
-        <h4>post #1: the landing</h4>
-        <p>
-          it's only when you're making things like this do you realize why
-          people moved on to CMS platforms (e.g. wordpress) and more elaborative
-          frameworks that take care of the dirty work for you (e.g. angular).
-          but for my purposes I'd say a good old static html page is perfect
-          (even though it still doesn't look pretty).
-        </p>
-        <p>
-          after all, I wouldn't identify as a web developer (at the moment). the
-          main goal of this website is to experiment with webGL, animejs and
-          webassembly as those technologies interest me.
-        </p>
-        <p>
-          the second goal is to explore the webdev-sphere in general. I think
-          it's fun to explore new technology in this manner. after all, I have
-          to climb some distance before I start finding place and use for those
-          technologies on my own (I dislike the idea of using a webpage that is
-          an empty canvas to 'experiment' with webGL). I was exploring 'new'
-          things in web that I wasn't familiar with, and the things I met along
-          the way? they're interesting.
-        </p>
-        <p>
-          CSS grids, for example, are super simple and intuitive. SASS, which
-          I'm definitely not utilizing to its maximum potential, is very
-          promising. I also thought about making this website in using gatsby,
-          but decided that would be too much investment, again, for my purposes.
-        </p>
-        <p>
-          lastly, there's Typescript. I like type safety (very predictable from
-          someone who likes C++ and Rust) so I thought about using it (and an
-          earlier version of this very post declared it
-          <strong>shall</strong> be used) but that would add another dimension
-          to my endeavor (which, is supposed to be purely 'graphical') so I'm
-          using plain old JS now, will try to get exposure to its newest
-          features throughout this experiment.
-        </p>
-        <div id="todo">
-          <strong>TODO:</strong>
-          <ol>
-            <li>investigate SVG pathing for animejs</li>
-            <li>tidy up sidebar and header layout and color scheme</li>
-            <li>conjure up graphical elements</li>
-            <li>
-              decide on a navigation scheme between different 'posts' and
-              implement it.
-            </li>
-            <li>keep an eye on my SCSS and find better ways to write it</li>
-            <li>
-              put an end to dynamic resizing (put a scrollbar or whatever)
-            </li>
-            <li>
-              we have a rotating cube, the same one in the default threeJS
-              tutorial albeit rendererd inside a canvas with a transparent
-              background. change the cube into something more interesting.
-            </li>
-          </ol>
-        </div>
-      </section>
+      <div id="post-container">
+        <h4 id="post-title">post #1: the landing</h4>
+        <section>
+          <p>
+            it's only when you're making things like this do you realize why
+            people moved on to CMS platforms (e.g. wordpress) and more
+            elaborative frameworks that take care of the dirty work for you
+            (e.g. angular). but for my purposes I'd say a good old static html
+            page is perfect (even though it still doesn't look pretty).
+          </p>
+          <p>
+            after all, I wouldn't identify as a web developer (at the moment).
+            the main goal of this website is to experiment with webGL, animejs
+            and webassembly as those technologies interest me.
+          </p>
+          <p>
+            the second goal is to explore the webdev-sphere in general. I think
+            it's fun to explore new technology in this manner. after all, I have
+            to climb some distance before I start finding place and use for
+            those technologies on my own (I dislike the idea of using a webpage
+            that is an empty canvas to 'experiment' with webGL). I was exploring
+            'new' things in web that I wasn't familiar with, and the things I
+            met along the way? they're interesting.
+          </p>
+          <p>
+            CSS grids, for example, are super simple and intuitive. SASS, which
+            I'm definitely not utilizing to its maximum potential, is very
+            promising. I also thought about making this website in using gatsby,
+            but decided that would be too much investment, again, for my
+            purposes.
+          </p>
+          <p>
+            lastly, there's Typescript. I like type safety (very predictable
+            from someone who likes C++ and Rust) so I thought about using it
+            (and an earlier version of this very post declared it
+            <strong>shall</strong> be used) but that would add another dimension
+            to my endeavor (which, is supposed to be purely 'graphical') so I'm
+            using plain old JS now, will try to get exposure to its newest
+            features throughout this experiment.
+          </p>
+          <div id="todo">
+            <strong>TODO:</strong>
+            <ol>
+              <li>investigate SVG pathing for animejs</li>
+              <li>tidy up sidebar and header layout and color scheme</li>
+              <li>conjure up graphical elements</li>
+              <li>
+                decide on a navigation scheme between different 'posts' and
+                implement it.
+              </li>
+              <li>keep an eye on my SCSS and find better ways to write it</li>
+              <li>
+                <strike
+                  >put an end to dynamic resizing (put a scrollbar or
+                  whatever)</strike
+                >
+                add an indicator that a post is scrollable that is not a clunky
+                scrollbar
+              </li>
+              <li>
+                we have a rotating cube, the same one in the default threeJS
+                tutorial albeit rendererd inside a canvas with a transparent
+                background. change the cube into something more interesting.
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
     </div>
     <footer>2020, copyrights and whatever else we put in footers.</footer>
   </body>

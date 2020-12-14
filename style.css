@@ -27,7 +27,7 @@ body {
   margin: 2em auto 2px;
   grid-template-columns: minmax(24%, 4fr);
   grid-template-rows: minmax(1, 4fr);
-  width: 50rem;
+  width: 53rem;
 }
 
 p, #todo ol, #todo {
@@ -38,12 +38,16 @@ p, #todo ol, #todo {
 section {
   grid-column: 2/3;
   grid-row: 2;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-right: 3%;
+  width: minmax(30rem, 40rem);
+  height: 32rem;
+  overflow: auto;
+  scrollbar-width: none;
+  padding-right: 3%;
 }
-section h4 {
-  color: #da7386;
-  font-family: Inconsolata;
+section ::-webkit-scrollbar {
+  display: none;
 }
 section p, section #todo ol, #todo section ol, section #todo {
   font-size: 14px;
@@ -54,6 +58,8 @@ aside {
   grid-column: 1;
   grid-row: 2;
   margin: 0 auto;
+  min-width: 11rem;
+  width: auto;
   border-right: thin solid #da7386;
 }
 aside p, aside #todo ol, #todo aside ol, aside #todo {
@@ -66,6 +72,10 @@ aside h3 {
   font-family: Inconsolata;
   text-align: center;
 }
+aside canvas {
+  margin: auto;
+  display: block;
+}
 
 footer {
   font-family: Inconsolata;
@@ -73,13 +83,16 @@ footer {
   margin: 0 auto;
 }
 
+#post-container h4 {
+  margin-left: 2%;
+  color: #da7386;
+  font-family: Inconsolata;
+  max-height: 1%;
+}
+
 #todo {
   margin-left: 3%;
   color: #ff2b52;
-}
-canvas {
-  margin: auto;
-  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
