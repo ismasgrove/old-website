@@ -26,8 +26,11 @@ function about() {
   let post = document.getElementById("post-container");
   post.innerHTML = $("#post-container").load("/content/about.html");
 }
-
 function landing() {
   let post = document.getElementById("post-container");
   post.innerHTML = $("#post-container").load("/content/landing.html");
+}
+function post_2() {
+  let post = document.getElementById("post-container");
+  post.innerHTML = $("#post-container").load("/content/post2.html");
 }

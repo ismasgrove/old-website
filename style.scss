@@ -5,6 +5,9 @@ $container-color: #13000a;
 $sidebar-color: #0e0007;
 $article-text-color: #ffcbd4;
 $text-highlight: #ff5171;
+$post-margin: 3%;
+$container-width: 55rem;
+$container-height: 40rem;
 
 header {
   font-family: $font;
@@ -36,8 +39,8 @@ body {
   margin: 2em auto 2px;
   grid-template-columns: min-content;
   grid-template-rows: minmax(1, 4fr);
-  width: 55rem;
-  min-height: 35rem;
+  width: $container-width;
+  min-height: $container-height;
 }
 
 p {
@@ -45,16 +48,41 @@ p {
   font-family: $font;
 }
 
-button.highlighted {
+.no-content {
+  color: $container-color;
+  background: none;
+  border: none;
+  width: 60px;
+}
+
+.sidebar-buttons {
+  @extend .highlighted;
   background: none;
   border: none;
   width: 60px;
   height: 20px;
 }
 
+.post-buttons {
+  @extend .highlighted;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 20px;
+  font-size: large;
+}
+
 nav {
   display: flex;
+}
+#sidebar-nav {
   justify-content: center;
+}
+#post-nav {
+  background: none;
+  height: 20px;
+  justify-content: end;
+  margin-bottom: 5px;
 }
 
 aside {
@@ -68,8 +96,8 @@ aside {
   border-right: thin solid $primary-accent;
   p {
     font-size: 13px;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: $post-margin;
+    margin-right: $post-margin;
   }
   h3 {
     color: $primary-accent;
@@ -77,8 +105,8 @@ aside {
     text-align: center;
   }
   canvas {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: $post-margin;
+    margin-right: $post-margin;
     display: block;
   }
 }
@@ -103,21 +131,14 @@ footer {
   grid-column: 2 / 3;
   grid-row: 2;
   margin-left: 2%;
-  margin-right: 3%;
+  margin-right: $post-margin;
   width: minmax(30rem, 40rem);
-  height: 35rem;
+  height: $container-height;
   padding-right: 3%;
   section {
-    //  grid-column: 2 / 3;
-    //  grid-row: 2;
-    //  margin-left: 2%;
-    //  margin-right: 3%;
-    //  width: minmax(30rem, 40rem);
-    //  height: 35rem;
-
+    min-height: 36rem;
     overflow: auto;
     scrollbar-width: none;
-    //  padding-right: 3%;
     ::-webkit-scrollbar {
       display: none;
     }
@@ -129,9 +150,13 @@ footer {
 
 .highlighted {
   @extend p;
-  margin-left: 3%;
+  margin-left: $post-margin;
   color: $text-highlight;
   ol {
     @extend p;
   }
+}
+
+.nav-button {
+  justify-content: end;
 }

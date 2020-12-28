@@ -7,7 +7,7 @@ header {
   text-align: center;
   height: 6rem;
 }
-header p, header .highlighted ol, .highlighted header ol, header .highlighted {
+header p, header .highlighted ol, .highlighted header ol, header .sidebar-buttons ol, .sidebar-buttons header ol, header .post-buttons ol, .post-buttons header ol, header .highlighted, header .sidebar-buttons, header .post-buttons {
   color: #13000a;
 }
 
@@ -29,24 +29,49 @@ body {
   grid-template-columns: min-content;
   grid-template-rows: minmax(1, 4fr);
   width: 55rem;
-  min-height: 35rem;
+  min-height: 40rem;
 }
 
-p, .highlighted ol, .highlighted {
+p, .highlighted ol, .sidebar-buttons ol, .post-buttons ol, .highlighted, .sidebar-buttons, .post-buttons {
   color: #ffcbd4;
   font-family: Inconsolata;
 }
 
-button.highlighted {
+.no-content {
+  color: #13000a;
+  background: none;
+  border: none;
+  width: 60px;
+}
+
+.sidebar-buttons {
   background: none;
   border: none;
   width: 60px;
   height: 20px;
 }
 
+.post-buttons {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 20px;
+  font-size: large;
+}
+
 nav {
   display: flex;
+}
+
+#sidebar-nav {
   justify-content: center;
+}
+
+#post-nav {
+  background: none;
+  height: 20px;
+  justify-content: end;
+  margin-bottom: 5px;
 }
 
 aside {
@@ -59,7 +84,7 @@ aside {
   min-height: inherit;
   border-right: thin solid #da7386;
 }
-aside p, aside .highlighted ol, .highlighted aside ol, aside .highlighted {
+aside p, aside .highlighted ol, .highlighted aside ol, aside .sidebar-buttons ol, .sidebar-buttons aside ol, aside .post-buttons ol, .post-buttons aside ol, aside .highlighted, aside .sidebar-buttons, aside .post-buttons {
   font-size: 13px;
   margin-left: 3%;
   margin-right: 3%;
@@ -89,7 +114,7 @@ footer {
   margin-left: 2%;
   margin-right: 3%;
   width: minmax(30rem, 40rem);
-  height: 35rem;
+  height: 40rem;
   padding-right: 3%;
 }
 #post-container .post-title {
@@ -101,19 +126,23 @@ footer {
   height: 0rem;
 }
 #post-container section {
+  min-height: 36rem;
   overflow: auto;
   scrollbar-width: none;
 }
 #post-container section ::-webkit-scrollbar {
   display: none;
 }
-#post-container section p, #post-container section .highlighted ol, .highlighted #post-container section ol, #post-container section .highlighted {
+#post-container section p, #post-container section .highlighted ol, .highlighted #post-container section ol, #post-container section .sidebar-buttons ol, .sidebar-buttons #post-container section ol, #post-container section .post-buttons ol, .post-buttons #post-container section ol, #post-container section .highlighted, #post-container section .sidebar-buttons, #post-container section .post-buttons {
   font-size: 15px;
 }
 
-.highlighted {
+.highlighted, .sidebar-buttons, .post-buttons {
   margin-left: 3%;
   color: #ff5171;
+}
+.nav-button {
+  justify-content: end;
 }
 
 /*# sourceMappingURL=style.css.map */
