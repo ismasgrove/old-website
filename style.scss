@@ -72,6 +72,10 @@ p {
   font-size: large;
 }
 
+a {
+  @extend .highlighted;
+}
+
 nav {
   display: flex;
 }
@@ -150,11 +154,14 @@ footer {
 
 .highlighted {
   @extend p;
-  margin-left: $post-margin;
   color: $text-highlight;
   ol {
     @extend p;
   }
+}
+
+#todo {
+  margin-left: $post-margin;
 }
 
 .nav-button {

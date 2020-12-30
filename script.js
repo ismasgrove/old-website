@@ -34,3 +34,37 @@ function post_2() {
   let post = document.getElementById("post-container");
   post.innerHTML = $("#post-container").load("/content/post2.html");
 }
+
+function post2_title_anim() {
+  anime({
+    targets: ".post-title",
+    translateX: 15,
+    loop: true,
+    easing: "easeInOutQuad",
+    direction: "alternate",
+    duration: 1000,
+  });
+}
+
+function post1_title_anim() {
+  let tl = anime.timeline({});
+  tl.add(
+    {
+      targets: ".post-title",
+      translateX: [-600, 0],
+      translateY: [-600, 0],
+      easing: "easeInQuad",
+      duration: 2000,
+    },
+    100
+  );
+  tl.add(
+    {
+      targets: ".post-title",
+      translateX: 40,
+      easing: "spring(10, 50, 50, 2)",
+      duration: 200,
+    },
+    "+=0.0001"
+  );
+}

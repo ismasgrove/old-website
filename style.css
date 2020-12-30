@@ -7,7 +7,7 @@ header {
   text-align: center;
   height: 6rem;
 }
-header p, header .highlighted ol, .highlighted header ol, header .sidebar-buttons ol, .sidebar-buttons header ol, header .post-buttons ol, .post-buttons header ol, header .highlighted, header .sidebar-buttons, header .post-buttons {
+header p, header .highlighted ol, .highlighted header ol, header .sidebar-buttons ol, .sidebar-buttons header ol, header .post-buttons ol, .post-buttons header ol, header a ol, a header ol, header .highlighted, header .sidebar-buttons, header .post-buttons, header a {
   color: #13000a;
 }
 
@@ -32,7 +32,7 @@ body {
   min-height: 40rem;
 }
 
-p, .highlighted ol, .sidebar-buttons ol, .post-buttons ol, .highlighted, .sidebar-buttons, .post-buttons {
+p, .highlighted ol, .sidebar-buttons ol, .post-buttons ol, a ol, .highlighted, .sidebar-buttons, .post-buttons, a {
   color: #ffcbd4;
   font-family: Inconsolata;
 }
@@ -84,7 +84,7 @@ aside {
   min-height: inherit;
   border-right: thin solid #da7386;
 }
-aside p, aside .highlighted ol, .highlighted aside ol, aside .sidebar-buttons ol, .sidebar-buttons aside ol, aside .post-buttons ol, .post-buttons aside ol, aside .highlighted, aside .sidebar-buttons, aside .post-buttons {
+aside p, aside .highlighted ol, .highlighted aside ol, aside .sidebar-buttons ol, .sidebar-buttons aside ol, aside .post-buttons ol, .post-buttons aside ol, aside a ol, a aside ol, aside .highlighted, aside .sidebar-buttons, aside .post-buttons, aside a {
   font-size: 13px;
   margin-left: 3%;
   margin-right: 3%;
@@ -133,14 +133,17 @@ footer {
 #post-container section ::-webkit-scrollbar {
   display: none;
 }
-#post-container section p, #post-container section .highlighted ol, .highlighted #post-container section ol, #post-container section .sidebar-buttons ol, .sidebar-buttons #post-container section ol, #post-container section .post-buttons ol, .post-buttons #post-container section ol, #post-container section .highlighted, #post-container section .sidebar-buttons, #post-container section .post-buttons {
+#post-container section p, #post-container section .highlighted ol, .highlighted #post-container section ol, #post-container section .sidebar-buttons ol, .sidebar-buttons #post-container section ol, #post-container section .post-buttons ol, .post-buttons #post-container section ol, #post-container section a ol, a #post-container section ol, #post-container section .highlighted, #post-container section .sidebar-buttons, #post-container section .post-buttons, #post-container section a {
   font-size: 15px;
 }
 
-.highlighted, .sidebar-buttons, .post-buttons {
-  margin-left: 3%;
+.highlighted, .sidebar-buttons, .post-buttons, a {
   color: #ff5171;
 }
+#todo {
+  margin-left: 3%;
+}
+
 .nav-button {
   justify-content: end;
 }
