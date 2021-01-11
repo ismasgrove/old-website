@@ -54,7 +54,7 @@ p, .highlighted ol, .sidebar-buttons ol, .post-buttons ol, a ol, .highlighted, .
 .post-buttons {
   background: none;
   border: none;
-  width: 30px;
+  width: 60px;
   height: 20px;
   font-size: large;
 }
@@ -135,6 +135,9 @@ footer {
 }
 #post-container section p, #post-container section .highlighted ol, .highlighted #post-container section ol, #post-container section .sidebar-buttons ol, .sidebar-buttons #post-container section ol, #post-container section .post-buttons ol, .post-buttons #post-container section ol, #post-container section a ol, a #post-container section ol, #post-container section .highlighted, #post-container section .sidebar-buttons, #post-container section .post-buttons, #post-container section a {
   font-size: 15px;
+}
+#post-container section canvas {
+  display: block;
 }
 
 .highlighted, .sidebar-buttons, .post-buttons, a {

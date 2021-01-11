@@ -8,6 +8,7 @@ $text-highlight: #ff5171;
 $post-margin: 3%;
 $container-width: 55rem;
 $container-height: 40rem;
+$button-width: 60px;
 
 header {
   font-family: $font;
@@ -52,14 +53,14 @@ p {
   color: $container-color;
   background: none;
   border: none;
-  width: 60px;
+  width: $button-width;
 }
 
 .sidebar-buttons {
   @extend .highlighted;
   background: none;
   border: none;
-  width: 60px;
+  width: $button-width;
   height: 20px;
 }
 
@@ -67,7 +68,7 @@ p {
   @extend .highlighted;
   background: none;
   border: none;
-  width: 30px;
+  width: $button-width;
   height: 20px;
   font-size: large;
 }
@@ -148,6 +149,12 @@ footer {
     }
     p {
       font-size: 15px;
+    }
+    canvas {
+      display: block;
+      //background: black;
+      //margin-left: $post-margin;
+      //margin-right: $post-margin;
     }
   }
 }

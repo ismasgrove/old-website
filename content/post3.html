@@ -1,0 +1,47 @@
+<h4 class="post-title">post #3: models are weird</h4>
+<script>
+  render_post3();
+</script>
+<section>
+  <p>
+    our puzzle for the day is, why doesn't this model have a face? (ignoring
+    that it is a model of miku doing the samba dance, that is)
+  </p>
+  <canvas id="post3_canvas" width="600px" height="600px"> </canvas>
+  <p>
+    and by face, I'm not talking about facial features. I'm talking about its
+    color. why is it transparent?
+  </p>
+  <p>
+    there are plenty of options to consider. maybe the lighting used simply
+    rendered her face transparent (this sounds completely unintuitive, doesn't
+    it? graphics makes you paranoid about every little detail) and it can be
+    solved simply by using a different kind of light setting.
+  </p>
+  <p>
+    the other option is 'this model is supposed to have a texture on its face,
+    but it is missing (not embedded nor externally present).' in which case,
+    isn't threejs simply supposed to use its material colors? that is what it
+    did for the other meshes. it probably attempted to read the face texture,
+    failed, and fell back to #000000 as a default.
+  </p>
+  <p>
+    if you're wondering why most people who program games or do graphics
+    programming have at least a basic proficiency in 3d modeling software
+    (despite not necessarily knowing how to model things) this is why. it's a
+    lot simpler and easier to simply adjust your models in a way that would
+    compliment your software than the other way around. surely, your software
+    has to be conclusive enough to decrease that workload (which is why
+    libraries such as Assimp are widely used), but regardless, there'll always
+    be a model that shows an outlier behavior, one that you'll need to manually
+    adjust, if only just to debug something.
+  </p>
+</section>
+<nav id="post-nav">
+  <button class="post-buttons" class="nav-button" onclick="post2()">
+    <strong><</strong>
+  </button>
+  <button class="no-content">
+    <strong>></strong>
+  </button>
+</nav>
