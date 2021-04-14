@@ -1,7 +1,7 @@
 import React from 'react'
 import 'twin.macro'
 
-export default function Content() {
+export default function Content () {
   return (<section tw='flex-grow p-4 space-y-2 overflow-auto'>
     <div tw='text-2xl font-bold'>what is this?</div>
     <p>
@@ -13,7 +13,7 @@ export default function Content() {
       there's also tailwind. one of the reasons why I was complaining about 'difficulty of maintaining' was I felt my scss file was getting too large. I fully realize it isn't large by the standards of well-accustomed, dedicated and seasoned web developers. that's according to my experience with other languages. it pairs nicely with react in terms of how I can separate my components so I could know exactly know where and what to look for, when I want to make changes.
     </p>
     <p>
-      an unplanned but very welcome change also the adoption of react-three. learning threejs was what pivoted me into web apps from the start. I must say, three is very pleasant to use in this form.
+      an unplanned but very welcome change was also the adoption of react-three. learning threejs was what pivoted me into web apps from the start. I must say, three is very pleasant to use in this form.
     </p>
     <p>
       this is still in early stages.
